@@ -12,9 +12,3 @@ class DeseabitDecoder:
     @staticmethod
     def decode(binaries: [int]) -> str:
         return MorseDecoder.decode(MorseBinaryDecoder.decode(binaries))
-
-
-
-x = DeseabitEncoder.encode("Bonjour comment vas-tu ?")
-print(x)
-print(DeseabitDecoder.decode(x))
